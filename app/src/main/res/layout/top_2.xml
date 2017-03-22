@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#eee"
+    android:layout_height="40dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+ 
+        <LinearLayout
+            android:id="@+id/chat_wapper"
+            android:layout_width="3dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="fill_parent">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="聊天"
+              android:id="@+id/chat_tv"
+              android:textColor="#008000"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/find_wapper"
+            android:layout_width="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现"
+                android:id="@+id/friend_tv"
+                android:textColor="#000000"
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/contact_wapper"
+            android:layout_width="3dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通讯录"
+                android:id="@+id/contact_tv"
+                android:textColor="#000000"
+              />
+        </LinearLayout>
+    </LinearLayout>
+
+<ImageView
+    android:layout_width="100dp"
+   android:id="@+id/imv_tab"
+    android:layout_height="3dp"
+    android:background="@drawable/tabline"/>
+</LinearLayout>
